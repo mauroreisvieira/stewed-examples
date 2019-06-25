@@ -2,10 +2,12 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./pages/Home.vue";
 import Login from "./pages/Login.vue";
+import Sushi from "./pages/Sushi.vue";
 
 Vue.use(Router);
 
-const routes = [    {
+const routes = [
+    {
         path: "/",
         name: "Home",
         component: Home,
@@ -14,9 +16,17 @@ const routes = [    {
         }
     },
     {
-        path: "/about",
-        name: "Login",
+        path: "/login-app",
+        name: "Login App",
         component: Login,
+        meta: {
+            description: ""
+        }
+    },
+    {
+        path: "/sushi-app",
+        name: "Sushi App",
+        component: Sushi,
         meta: {
             description: ""
         }

@@ -1,13 +1,6 @@
 <template>
     <div>
-        <router-link
-            class="navigation__item"
-                v-for="(menu, index) in this.menus"
-                :key="index"
-                :to="menu.path"
-                :title="menu.name" >
-                {{ menu.name }}
-        </router-link>
+        <h1>Welcome...</h1>
     </div>
 </template>
 
@@ -19,7 +12,6 @@
                 menus: this.$router.options.routes
             }
         },
-        mounted() {
-        }
+        mounted() {}
     }
 </script>

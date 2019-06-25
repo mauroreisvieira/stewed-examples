@@ -1,5 +1,5 @@
 module.exports = {
-    outputDir: 'app',
+    outputDir: 'docs',
     pages: {
         index: {
             entry: 'src/main.js',
